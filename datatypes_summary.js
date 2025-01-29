@@ -42,6 +42,33 @@ const myFunction = function()
     console.log("Jay Ganesh");
     
 }
-console.log(typeof myFunction);
-console.log(typeof myObj);
+// console.log(typeof myFunction);
+// console.log(typeof myObj);
+
+// **********************************************************
+
+// stack(Primitive)  , Heap(Non-Primitive)
+
+let myName = "PinkiGaikwad"
+
+let anotherName = myName
+anotherName = "chaiaurcode"
+
+console.log(anotherName);
+console.log(myName);
+
+let user1 = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+console.log(user1);
+
+
+let user2 = user1
+console.log(user2);
+
+user2.email = "Priyanka@google.com"
+
+console.log(user1.email);
+console.log(user2.email);
 
